@@ -5,7 +5,9 @@ import Image from "next/image";
 const page = () => {
   return (
     <form className={style.form}>
-      <Image width={30} height={30} src="/cloud6.png" alt="sign up" />
+      <div className="flex justify-center">
+        <Image width={30} height={30} src="/cloud6.png" alt="sign up" />
+      </div>
       <div>
         <p>Email</p>
         <input type="email" />
@@ -16,7 +18,7 @@ const page = () => {
       </div>
       <p>
         Already have an account ?{" "}
-        <a href="/signup" className="">
+        <a href="/signup" className="text-blue-600 cursor-pointer">
           Sign in
         </a>
       </p>
