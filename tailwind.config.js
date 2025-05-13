@@ -1,11 +1,14 @@
-module.exports = {
+/** @type {import('tailwindcss').Config} */
+const config = {
   content: [
-    './app/**/*.{ts,tsx}',      // For App Router
-    './components/**/*.{ts,tsx}',
-    './pages/**/*.{ts,tsx}',    // If you use /pages too
+    "./app/**/*.{js,ts,jsx,tsx}",
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
   },
   plugins: [],
-}
+};
+
+export default config;
